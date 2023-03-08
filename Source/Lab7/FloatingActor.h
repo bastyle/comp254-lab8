@@ -22,7 +22,18 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-
+	UPROPERTY(EditAnywhere)
+	float MovementFactor;
+	
+	UPROPERTY(EditAnywhere)
+	float XInitRange;
+	UPROPERTY(EditAnywhere)
+	float XEndRange;
+	UPROPERTY(EditAnywhere)
+	float YInitRange;
+	UPROPERTY(EditAnywhere)
+	float YEndRange;
+	
 	float RunningTime;
 
 };
